@@ -16,11 +16,9 @@ public class UserController {
 
     private final UserService service;
 
-
     public UserController(UserService service) {
         this.service = service;
     }
-
 
     // ==========================================
     // CREATE USER
@@ -39,7 +37,6 @@ public class UserController {
                 .body(createdUser);
     }
 
-
     // ==========================================
     // GET ALL USERS
     // ==========================================
@@ -51,7 +48,6 @@ public class UserController {
                 service.getAllUsers()
         );
     }
-
 
     // ==========================================
     // GET USER BY ID
@@ -75,7 +71,6 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 
-
     // ==========================================
     // GET USER BY EMAIL
     // ==========================================
@@ -98,7 +93,6 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 
-
     // ==========================================
     // UPDATE USER
     // ==========================================
@@ -119,7 +113,6 @@ public class UserController {
                 updatedUser
         );
     }
-
 
     // ==========================================
     // DELETE USER

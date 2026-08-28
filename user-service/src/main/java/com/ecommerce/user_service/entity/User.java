@@ -19,7 +19,6 @@ public class User {
 
     private String phone;
 
-
     // ID
     public Long getId() {
         return id;
@@ -28,7 +27,6 @@ public class User {
     public void setId(Long id) {
         this.id = id;
     }
-
 
     // Name
     public String getName() {
@@ -39,7 +37,6 @@ public class User {
         this.name = name;
     }
 
-
     // Email
     public String getEmail() {
         return email;
@@ -49,7 +46,6 @@ public class User {
         this.email = email;
     }
 
-
     // Password
     public String getPassword() {
         return password;
@@ -58,7 +54,6 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
 
     // Phone
     public String getPhone() {

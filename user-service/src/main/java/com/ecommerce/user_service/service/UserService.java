@@ -13,11 +13,9 @@ public class UserService {
 
     private final UserRepository repository;
 
-
     public UserService(UserRepository repository) {
         this.repository = repository;
     }
-
 
     // CREATE
     public User createUser(User user) {
@@ -32,13 +30,11 @@ public class UserService {
         return repository.save(user);
     }
 
-
     // GET ALL
     public List<User> getAllUsers() {
 
         return repository.findAll();
     }
-
 
     // GET BY ID
     public Optional<User> getUserById(Long id) {
@@ -46,13 +42,11 @@ public class UserService {
         return repository.findById(id);
     }
 
-
     // GET BY EMAIL
     public Optional<User> getUserByEmail(String email) {
 
         return repository.findByEmail(email);
     }
-
 
     // UPDATE
     public User updateUser(
@@ -67,7 +61,6 @@ public class UserService {
                                         "User not found"
                                 )
                         );
-
 
         existingUser.setName(
                 updatedUser.getName()
@@ -85,10 +78,8 @@ public class UserService {
                 updatedUser.getPhone()
         );
 
-
         return repository.save(existingUser);
     }
-
 
     // DELETE
     public void deleteUser(Long id) {
